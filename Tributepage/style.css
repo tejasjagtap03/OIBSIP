@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.h1{
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40px;
+}
+h3{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 18px;
+}
+.middle{
+
+    text-align: center;
+    font-size: 15px;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right:4rem ;
+    width: fit-content;
+    color: whitesmoke;
+    
+}
+.img
+{   
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.bottom{
+         text-align: center;
+         color: whitesmoke;
+         margin-top: 4rem;
+         font-size: 15px;
+         margin-bottom: 3rem;
+}
+a{
+    margin-left: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+
+}
