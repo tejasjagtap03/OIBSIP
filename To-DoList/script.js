@@ -1,0 +1,52 @@
+const inputtdl = document.querySelector('.text')
+const buttontdl = document.querySelector('.ipbutton')
+const listtdl = document.querySelector('.todolist')
+
+function clickButton(a) {
+    a.preventDefault()
+    addTodo()
+}
+
+function addTodo() {
+    const itemall = document.createElement('div')
+    itemall.classList.add('itemall')
+
+    const item = document.createElement('p')
+    item.classList.add('item')
+    item.innerText = inputtdl.value
+    itemall.appendChild(item)
+
+    if (inputtdl.value === '') return
+
+    const checkbutton = document.createElement("button")
+    checkbutton.innerHTML = '<i class="fa-solid fa-check"></i>'
+    checkbutton.classList.add("check-button")
+    itemall.appendChild(checkbutton)
+
+    const trashbutton = document.createElement("button")
+    trashbutton.innerHTML = '<i class="fa-solid fa-trash"></i>'
+    trashbutton.classList.add("trash-button")
+    itemall.appendChild(trashbutton)
+
+    listtdl.appendChild(itemall)
+    inputtdl.value = ''
+}
+
+function okdel(a) {
+    const item = a.target
+
+    
+    if (item.classList[0] === 'check-button') {
+        const todolist = item.parentElement
+        todolist.classList.toggle('checklist')
+    }
+
+    
+    if (item.classList[0] === 'trash-button') {
+        const todolist = item.parentElement
+        todolist.remove()
+    }
+}
+
+buttontdl.addEventListener('click', clickButton)
+listtdl.addEventListener('click', okdel)
