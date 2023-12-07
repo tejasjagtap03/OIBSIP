@@ -27,26 +27,19 @@ function addTodo() {
     trashbutton.innerHTML = '<i class="fa-solid fa-trash"></i>'
     trashbutton.classList.add("trash-button")
     itemall.appendChild(trashbutton)
-
     listtdl.appendChild(itemall)
     inputtdl.value = ''
 }
-
 function okdel(a) {
     const item = a.target
-
-    
-    if (item.classList[0] === 'check-button') {
+ if (item.classList[0] === 'check-button') {
         const todolist = item.parentElement
         todolist.classList.toggle('checklist')
     }
-
-    
-    if (item.classList[0] === 'trash-button') {
+  if (item.classList[0] === 'trash-button') {
         const todolist = item.parentElement
         todolist.remove()
     }
 }
-
 buttontdl.addEventListener('click', clickButton)
 listtdl.addEventListener('click', okdel)
