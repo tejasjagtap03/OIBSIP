@@ -4,13 +4,10 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-
 body {
     background-image: linear-gradient(to right, #520303, #df000b, #520505);
     margin: 50px 2%;
 }
-
-
 .container-title {
     font-size: 25px;
     text-align: center;
@@ -18,8 +15,6 @@ body {
     color: black;
     text-shadow: 3px 1px white;
 }
-
-
 .input{
     display: grid;
     column-gap: 5px;
@@ -28,7 +23,6 @@ body {
     margin-top: 10px;
     color: #333;
 }
-
 .text {
     min-height: 50px;
     height: 50px;
@@ -41,33 +35,27 @@ body {
     overflow: auto;
     overflow-x: hidden;
 }
-
 .text::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #333;
 }
-
 .text::-webkit-scrollbar {
     width: 10px;
     cursor: pointer;
 }
-
 .text::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #8f8acc;
     cursor: pointer;
 }
-
 .text:focus {
     outline: none;
 }
-
 .ipbutton {
     border-radius: 10px;
     background-color: white;
     font-size: 20px;
 }
-
 .ipbutton:hover {
     background-color:  #37b3cc;
     color: white;
